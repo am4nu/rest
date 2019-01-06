@@ -10,6 +10,8 @@ WORKDIR /app
 
 RUN pip3 install -r requirements.txt
 
+RUN pip3 install --user flask sqlalchemy flask-sqlalchemy
+
 COPY . /app
 
 ENTRYPOINT [ "bash" ]
