@@ -1,7 +1,7 @@
 from flask import Flask,jsonify
 from flask_sqlalchemy import SQLAlchemy
 application = Flask(__name__)
-application.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:////app/hello.db' #database file (sqlite)
+application.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///hello.db' #database file (sqlite) this will create file in the project folder
 dbase=SQLAlchemy(application)
 
 class User(dbase.Model):
@@ -15,7 +15,7 @@ def index():
         #userinput= request.get_json()
         #return jsonify({'You typed':userinput}),202 #I set response code to 202
     #else:
-    return "<h4> Usage: http://0.0.0.0:5000/hello/&lt'string'&gt </h4>"
+    return "<h4> Usage: http://0.0.0.0:5000/hello/&ltstring&gt </h4>"
 
 @application.route('/hello')
 def hello():
@@ -30,7 +30,8 @@ def retr(var):
     dbase.session.add(vr)   #write the name to the database
     dbase.session.commit()  #commit the string name to database
     var1='hello'+' '+var
-    return jsonify(var1) #return the string entered at the RESSFULL endpoint as JSON data
+    return jsonify(var1) #return the string entered at the RESTFULL endpoint as JSON data
+
 
 if  __name__ == '__main__':
     application.run(debug=True, host='0.0.0.0')

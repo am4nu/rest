@@ -14,7 +14,7 @@ RUN pip3 install --user flask sqlalchemy flask-sqlalchemy
 
 COPY . /app
 
-RUN python3 setup.py
+RUN python3 dbsetup.py
 
 ENTRYPOINT [ "python3", "app.py" ]
 
