@@ -11,16 +11,16 @@ After that run:
 
 $ sh install.sh
 
-Voila!:
 
-Not now to test the enpoints open any browser type the following url to test the endpoints:
 
+
+now to test the enpoints open any browser type the following url to test the endpoints:
 
 This is implemented according to use case given
 
 http://localhost:5000/hello/<string>
 
-To see the database  being inputted through the endpoint above:
+To see the database  enter the url below in the browser:
 http://localhost:5000/db
 
 
