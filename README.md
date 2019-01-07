@@ -28,4 +28,8 @@ http://localhost:5000/db
 
 
 
+if you don't have browser you can use wget from commandline
 
+$ wget http://localhost:5000/hello/"string"
+
+$ wget http://localhost:5000/db
