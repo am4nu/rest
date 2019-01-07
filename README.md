@@ -7,7 +7,7 @@ on the terminal run:
 
 $ git clone -b nopost https://github.com/mdamanuddin/rest && cd rest
 
-Afte that run:
+After that run:
 
 $ sh install.sh
 
