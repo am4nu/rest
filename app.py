@@ -31,7 +31,12 @@ def retr(var):
     dbase.session.commit()  #commit the string name to database
     var1='hello'+' '+var
     return jsonify(var1) #return the string entered at the RESTFULL endpoint as JSON data
-
+@application.route('/db')
+def db():
+    dba=User.query.all() #gets all the objects from the database that we created
+    repr(dba)
+    return jsonify(repr(dba)) #returns all the contents of the database
+    
 
 if  __name__ == '__main__':
     application.run(debug=True, host='0.0.0.0')

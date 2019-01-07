@@ -15,7 +15,14 @@ Voila!:
 
 Not now to test the enpoints open any browser type the following url to test the endpoints:
 
+
+This is implemented according to use case given
+
 http://localhost:5000/hello/<string>
+
+To see the database  being inputted through the endpoint above:
+http://localhost:5000/db
+
 
 
 
