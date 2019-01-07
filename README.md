@@ -12,7 +12,7 @@ After that run:
 $ sh install.sh
 
 
-It will as for the name of the container just input any name you want
+It will ask for the name of the container just input any name you want
 
 
 
