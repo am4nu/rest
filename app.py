@@ -10,7 +10,7 @@ class User(dbase.Model):
     def __repr__(self):
         return '<Name %r>' % self.name #if you print this object it will output the name and not the id
 @application.route('/')
-def hello():
+def index():
     #if(request.method =='POST'):
         #userinput= request.get_json()
         #return jsonify({'You typed':userinput}),202 #I set response code to 202
