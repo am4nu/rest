@@ -1,4 +1,4 @@
-from flask import Flask,jsonify,request
+from flask import Flask,jsonify,request,
 from flask_sqlalchemy import SQLAlchemy
 application = Flask(__name__)
 application.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:////app/hello.db' #database file (sqlite)
@@ -9,7 +9,13 @@ class User(dbase.Model):
     name=dbase.Column(dbase.String(255)) # It will help in creating database in the sqlite database
     def __repr__(self):
         return '<Name %r>' % self.name #if you print this object it will output the name and not the id
-
+@application.route('/')
+def hello():
+    #if(request.method =='POST'):
+        #userinput= request.get_json()
+        #return jsonify({'You typed':userinput}),202 #I set response code to 202
+    #else:
+    return '<h1> Usage: http://localhost/hello/<somestring> <h1>'
 
 @application.route('/hello')
 def hello():
