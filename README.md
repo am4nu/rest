@@ -12,15 +12,18 @@ After that run:
 $ sh install.sh
 
 
+It will as for the name of the container just input any name you want
+
+
 
 
 now to test the enpoints open any browser type the following url to test the endpoints:
 
 This is implemented according to use case given
 
-http://localhost:5000/hello/<string>
+http://localhost:5000/hello/&ltstring&gt or
 
-To see the database  enter the url below in the browser:
+To see the database  enter the url in the browser:
 http://localhost:5000/db
 
 
