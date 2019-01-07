@@ -15,7 +15,7 @@ def index():
         #userinput= request.get_json()
         #return jsonify({'You typed':userinput}),202 #I set response code to 202
     #else:
-    return "<h3> Usage: http://localhost/hello/<somestring> </h3>"
+    return "<h3> Usage: http://localhost:5000/hello/somethingOrnothing </h3>"
 
 @application.route('/hello')
 def hello():
