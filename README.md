@@ -13,7 +13,9 @@ $ sh install.sh
 
 Voila!:
 
-Not now to test the enpoints open any browser:
+Not now to test the enpoints open any browser type the following url to test the endpoints:
+
+http://localhost:5000/hello/<string>
 
 
 
