@@ -1,5 +1,5 @@
-# RestAPI
-Hello Rest API , built with flask, docker, sqlalchemy
+# HelloAPI
+Hello API , built with flask, docker, sqlalchemy
 
 
 Make sure you are on ubuntu >=16.04
