@@ -5,9 +5,13 @@ Hello API , built with flask, docker, sqlalchemy
 Make sure you are on ubuntu >=16.04
 
 on the terminal run:
+
+
 $ git clone -b nopost https://github.com/mdamanuddin/rest && cd rest
 
+
 After that run:
+
 
 $ sh install.sh
 
